@@ -13,6 +13,21 @@ const FlightSearch = () => {
   const handleSearch = () => {
     // Handle the flight search logic here
     console.log("Searching for flights");
+    navigate("/booking-confirmation", {
+      state: {
+        flightDetails: {
+          departureCity,
+          destinationCity,
+          departureDate,
+          returnDate
+        },
+        passengerInfo: {
+          name: "John Doe",
+          email: "john.doe@example.com"
+        },
+        confirmationNumber: "ABC123"
+      }
+    });
   };
 
   return (
