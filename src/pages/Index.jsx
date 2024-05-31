@@ -11,6 +11,7 @@ const Index = () => {
           <Image src="/images/travel-booking.jpg" alt="Travel Booking" />
         </Box>
         <Button as={Link} to="/book" colorScheme="teal" size="lg">Book Your Trip Now</Button>
+        <Button as={Link} to="/flight-search" colorScheme="teal" size="lg">Search Flights</Button>
       </VStack>
     </Container>
   );
